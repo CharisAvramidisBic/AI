@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PDF Summarizer</title>
+  </head>
+  <body>
+    <h1>PDF Summarizer</h1>
+    <p>Please upload a PDF file:</p>
+    <form action="/summarize" method="post" enctype="multipart/form-data">
+      <input type="file" name="pdf_file">
+      <br><br>
+      <input type="submit" value="Summarize">
+    </form>
+    <hr>
+    <p>Or ask a question:</p>
+    <form action="/answer" method="post">
+      <input type="text" name="question">
+      <br><br>
+      <input type="submit" value="Answer">
+    </form>
+  </body>
+</html>
